@@ -1,4 +1,6 @@
 import streamlit as st
-
-st.title(":orange[Projek LPK 2025]")
-st.title(":blue[Penentuan Bilangan Ganjil dan Genap]")
+number = int(st.number_input("Insert a number", min_value=0, max_value=10000))
+if number%2=1:
+  st.write("Bilangan", number,"termasuk bilangan ganjil")
+else:
+  st.write("Bilangan", number,"termasuk bilangan genap")
